@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+   <head>
+     <title>Calculatrice</title>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to=no" >
+     <meta name="author" content="Osval Guian Mercury" />
+     <meta name="msapplication-TileColor" content="#c9c9c9">
+     <meta name="theme-color" content="#ffffff">
+     <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+   </head>
+   <body class="bg-light">
+     <div class="container mt-3">
+       <div class="text-center">
+         <h1> Ma calculatrice</h1>
+       </div>
+       <div class="row mx-auto">
+         <div class="border border-dark bg-dark col-lg-4 col-md-6 col-sm-12 col-xl-4" id="calco">
+           <div class="">
+             <div class="mt-2 bg-bcd" id="board">
+               0
+             </div>
+             <div class="row mt-3">
+               <div class="col-6  pt-1 pb-1 pl-1 pr-4">
+                 <div class=" bg-bcd" id="watch">
+                 </div>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-block btn-warning" id="del-btn">
+                   DEL
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-block btn-warning" id="clear-btn">
+                   C
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="x-square">
+                   x<sup>2</sup>
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block operation" data-sign="power">
+                  x<sup>y</sup>
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-info btn-block" id="memory-save">
+                   MS
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-info btn-block" id="memory-value">
+                   M
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="sin">
+                   sin
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="cos">
+                   cos
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="tan">
+                   tan
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="ln">
+                   ln
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="pi">
+                   &pi;
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="expo">
+                   e<sup>x</sup>
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="sqrt">
+                  &#8730;x
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block operation" data-sign="plus" >
+                   +
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="7">
+                   7
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="8">
+                   8
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="9">
+                   9
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block operation" data-sign="time" >
+                   &times;
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="4">
+                   4
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="5">
+                   5
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="6">
+                   6
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block operation" data-sign="divide" >
+                   &divide;
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="1">
+                   1
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="2">
+                   2
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="3">
+                   3
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block operation" data-sign="minus" >
+                   -
+                 </button>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block number" data-value="0">
+                   0
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="dot">
+                   .
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-light btn-block" id="btn-sign">
+                   +/-
+                 </button>
+               </div>
+               <div class="col-3 p-1">
+                 <button class="btn btn-info btn-block" id="equal">
+                   =
+                 </button>
+               </div>
+             </div>
+           </div>
+           <div class="text-danger" id="error">
+           </div>
+         </div>
+         <div class="border-left col-sm-12 col-lg-5 col-md-5 col-xl-4 ml-2">
+           <div class="text-center">
+             <h2><u> Derniers calculs</u></h2>
+           </div>
+           <div class="text-right">
+             <button class="btn btn-info" id="clear-history">
+               vider l'historique
+             </button>
+           </div>
+           <div id="last-results">
+           </div>
+         </div>
+       </div>
+
+     </div>
+     <script type="text/javascript" src="assets/js/main.js" ></script>
+   </body>
